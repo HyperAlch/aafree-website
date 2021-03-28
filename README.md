@@ -1,6 +1,6 @@
-# playdo
+# AAFree.info
 
-> Playdo - Online Gaming HTML Template
+> AAFree.info Source Code
 
 ## Build Setup
 
