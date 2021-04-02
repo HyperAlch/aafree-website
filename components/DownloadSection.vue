@@ -5,8 +5,8 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
-            <h3>Download Tutorials</h3>
-
+            <h3>Download Tutorial</h3>
+            <a class="ready-btn" onclick="window.location = 'https://aafree.to/download/'">Skip Tutorial</a>
           </div>
         </div>
       </div>
@@ -19,16 +19,19 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li v-bind:class="{ active: torrentSoftwareActive, 'nav-item': !torrentSoftwareActive, clickable: !torrentSoftwareActive}" v-on:click="switchVideo(0)">
                 <a class="nav-link" id="one-tab">
+                  Step 1<br>
                   Torrent Software
                 </a>
               </li>
               <li v-bind:class="{ active: gameDownloadActive, 'nav-item': !gameDownloadActive, clickable: !gameDownloadActive}" v-on:click="switchVideo(1)">
                 <a class="nav-link" id="two-tab">
+                  Step 2<br>
                   Game Download
                 </a>
               </li>
               <li v-bind:class="{ active: gameInstallActive, 'nav-item': !gameInstallActive, clickable: !gameInstallActive}" v-on:click="switchVideo(2)">
                 <a class="nav-link" id="three-tab">
+                  Step 3<br>
                   Game Install
                 </a>
               </li>
@@ -61,14 +64,14 @@
                             <span class="bit-mony">Download</span>
                           </div>
                         </div>
-                        <div class="clickable single-gaimer">
+                        <div class="clickable single-gaimer" v-on:click="displayVideoPopup">
                           <img class="gaimer" src="/img/icon/m2.png" alt="">
                           <div class="gaimer-content">
-                            <h6>Having issues?</h6>
-                            <span class="bit-mony">Try looking here</span>
+                            <h6>Confused about torrents?</h6>
+                            <span class="bit-mony">Here's a crash course</span>
                           </div>
                         </div>
-                        <div class="clickable single-gaimer last-content" onclick="window.location = 'https://discord.com/invite/6uBDQu7'">
+                        <div id="discordBox" class="clickable single-gaimer last-content" onclick="window.location = 'https://discord.com/invite/6uBDQu7'">
                           <img class="gaimer" src="/img/icon/m3.png" alt="">
                           <div class="gaimer-content">
                             <h6>Need even more support?</h6>
@@ -107,7 +110,7 @@
           torrentSoftwareActive: true,
           gameDownloadActive: false,
           gameInstallActive: false,
-          videoHTML: '<iframe class=\"embed-responsive-item\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/XIMLoLxmTDw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>'
+          videoHTML: '<iframe id="tutorialVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sPCDzDqhEpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         }
       },
         mounted() {
@@ -120,6 +123,12 @@
             if (videosActive[num] == true)
             {
               return;
+            }
+
+            if (window.innerWidth < 992)
+            {
+              let discordBox = document.getElementById('discordBox')
+              discordBox.scrollIntoView();
             }
 
             this.$data.torrentSoftwareActive = false;
@@ -138,11 +147,32 @@
             }
 
 
-            let blankVideo = "<iframe class=\"embed-responsive-item\" width=\"560\" height=\"315\" src=\"https://www.youtube-nocookie.com/embed/XIMLoLxmTDw\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
-            let videos = [blankVideo, blankVideo, blankVideo];
+            // class="embed-responsive-item"
+            const step1 = '<iframe id="tutorialVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube-nocookie.com/embed/sPCDzDqhEpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+            const step2 = '<iframe id="tutorialVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube-nocookie.com/embed/n9T7MkfvL7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+            const step3 = '<iframe id="tutorialVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube-nocookie.com/embed/tXV_2i8r4xE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+            const videos = [step1, step2, step3];
 
             this.$data.videoHTML = videos[num];
 
+          },
+          displayVideoPopup() {
+            const SweetAlert = require("sweetalert2")
+            SweetAlert.fire({
+              title: '',
+              showConfirmButton: false,
+              html: `<div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EkkFT1bRCT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <br>
+                <h3>Click on page to close</h3>
+                `,
+              width: 800,
+              padding: 0,
+              backdrop: 'rgb(0,0,0, 0.9)',
+              background: 'rgba(76, 175, 80, 0.0)'
+
+            })
           }
       }
     }

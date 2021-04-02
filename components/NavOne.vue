@@ -61,7 +61,7 @@
                       </ul>
                     </li>
                     <li v-on:click="toGoOfficial('/news/')"><nuxt-link class="pagess" to="#">News</nuxt-link></li>
-                    <li v-on:click="toGoOfficial('/download/')"><nuxt-link class="pagess" to="#">Client Download</nuxt-link></li>
+                    <li><nuxt-link class="pagess" to="/download">Game Download</nuxt-link></li>
                     <li><nuxt-link class="pagess" to="/donate">Donate</nuxt-link></li>
                     <li onclick="window.location = 'https://discord.com/invite/6uBDQu7'"><nuxt-link class="pagess" to="#">Discord</nuxt-link></li>
                     <li v-on:click="toGoOfficial('/forums/index.php')"><nuxt-link class="pagess" to="#">Forum</nuxt-link></li>
@@ -95,7 +95,7 @@
                   <li><a class="pagess" href="/faq">FAQ</a></li>
                   <li><a class="pagess" href="/gift">Gift Pack</a></li>
                   <li v-on:click="toGoOfficial('/news/')"><a class="pagess" href="#">News</a></li>
-                  <li v-on:click="toGoOfficial('/download/')"><a class="pagess" href="#">Client Download</a></li>
+                  <li><a class="pagess" href="/download">Game Download</a></li>
                   <li><a class="pagess" href="/donate">Donate</a></li>
                   <li onclick="window.location = 'https://discord.com/invite/6uBDQu7'"><a class="pagess" href="#">Discord</a></li>
                   <li v-on:click="toGoOfficial('/forums/index.php')"><a class="pagess" href="#">Forum</a></li>
