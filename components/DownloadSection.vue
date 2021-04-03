@@ -4,6 +4,26 @@
 
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+            <h3 class="alert-danger">Important</h3> Copyright holders of ArcheAge (XL Games) have sent requests to "black list" the servers AAFree uses to deliver their downloads. This means many <b>Anti Virus</b>
+            software will falsely block some URL's when you try to download the game. We DO NOT request that you turn off your <b>Anti Virus</b> because it is unsafe, but we
+            do request that you add exclusions to these 3 URLs in order for your download to go smoothly:<br><br>
+            <ul>
+              <li>http://cdn01.aafree.xyz/</li>
+              <li>http://cdn02.aafree.xyz/</li>
+              <li>http://sgcdn.aafree.xyz/</li>
+            </ul>
+            <br>
+            If you are unsure on how to add exclusions to your <b>Anti Virus</b>, please visit our <a href="https://discord.com/invite/6uBDQu7">Discord</a><br>
+            Also, keep in mind that in most cases URL exclusions do not exempt the files them self's from being scanned. So you are still protected.
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
             <h3>Download Tutorial</h3>
             <a class="ready-btn" onclick="window.location = 'https://aafree.to/download/'">Skip Tutorial</a>
