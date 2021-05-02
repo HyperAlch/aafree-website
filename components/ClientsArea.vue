@@ -12,28 +12,27 @@
               </p>
             </div>
           </div>
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="card-list">
-              <div class="single-card">
-                <a v-if="0" href="#"><img src="/img/brand/1.png" alt=""></a>
-              </div>
-
-              <div class="single-card">
-                <a href="/donate"><img src="/img/donate/game_flip.png" alt=""></a>
-              </div>
-              <br class="hidden-md hidden-lg hidden-sm">
-              <div class="single-card">
-                <a href="/donate"><img src="/img/donate/free_kassa_logo.png" alt=""></a>
-              </div>
-              <br class="hidden-md hidden-lg hidden-sm">
-              <div class="single-card">
-                <a href="/donate"><img src="/img/donate/bitcoin.png" alt=""></a>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-12">-->
+<!--            <div class="card-list">-->
+<!--              <div class="single-card">-->
+<!--                <a v-if="0" href="#"><img src="/img/brand/1.png" alt=""></a>-->
+<!--              </div>-->
+<!--              <div class="single-card">-->
+<!--                <a href="/donate"><img src="/img/donate/game_flip.png" alt=""></a>-->
+<!--              </div>-->
+<!--              <br class="hidden-md hidden-lg hidden-sm">-->
+<!--              <div class="single-card">-->
+<!--                <a href="/donate"><img src="/img/donate/free_kassa_logo.png" alt=""></a>-->
+<!--              </div>-->
+<!--              <br class="hidden-md hidden-lg hidden-sm">-->
+<!--              <div class="single-card">-->
+<!--                <a href="/donate"><img src="/img/donate/bitcoin.png" alt=""></a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="text-center">
-              <a class="overview-btn" style="margin-top: 40px" href="/donate">Donate</a>
+              <a class="overview-btn" style="margin-top: 0px" href="/donate">Donate</a>
             </div>
           </div>
         </div>

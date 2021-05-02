@@ -11,7 +11,7 @@
       </div>
       <div class="row">
         <div class="ticket-content">
-          <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-12">
             <!-- fun_text  -->
             <div class="single-ticket">
 
@@ -21,16 +21,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <!-- fun_text  -->
-            <div class="single-ticket">
+<!--          <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-12">-->
+<!--            &lt;!&ndash; fun_text  &ndash;&gt;-->
+<!--            <div class="single-ticket">-->
 
-              <div class="ticket-text">
-                <h4 class="ticket-name">Crypto / Free Kassa</h4>
-                <a class="ticket-btn" href="http://myredeem.club/en/">Donate Now</a>
-              </div>
-            </div>
-          </div>
+<!--              <div class="ticket-text">-->
+<!--                <h4 class="ticket-name">Crypto / Free Kassa</h4>-->
+<!--                <a class="ticket-btn" href="http://myredeem.club/en/">Donate Now</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
         </div>
       </div>
     </div>

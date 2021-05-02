@@ -120,7 +120,7 @@
                   <h2 class="ac-q accordion__title-text" tabIndex="0">Step 9: Login to your account</h2>
                   <div class="ac-a accordion__content">
                     <p class="accordion__content-desc">
-                      Login to the official, international website at: <a href="https://aafree.to/user/auth/" target="_blank">https://aafree.to/user/auth/</a>
+                      Login to the official, international website at: <a href="https://aafree.to/user/" target="_blank">https://aafree.to/user/</a>
                     </p>
                   </div>
                 </div>
@@ -148,135 +148,134 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <!-- Start FAQ Start -->
-        <div class="all-faq-text">
-          <div class="col-md-8 col-sm-8 col-xs-12">
-            <!-- End FAQ full -->
-            <div class="faq-full">
-              <div class="single-faq ">
-                <h4>Cryptocurrency</h4>
-              </div>
-              <div class="accordion-container-two">
-                <div class="ac" id="gameflip-first">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 1: Choose an amount</h2>
-                  <div class="ac-a accordion__content">
-                    <p class="accordion__content-desc">
-                      Go to <a href="http://myredeem.club/en/" target="_blank">http://myredeem.club/en/</a> and choose the amount in dollars you would like to donate
-                      <br>
-                      <img src="/img/aafree/donate/crypto/1.png">
-                      You can see dollar to gem exchange rate <a href="/donate">here</a>
-                    </p>
-                  </div>
-                </div>
+<!--      <div class="row">-->
+<!--        &lt;!&ndash; Start FAQ Start &ndash;&gt;-->
+<!--        <div class="all-faq-text">-->
+<!--          <div class="col-md-8 col-sm-8 col-xs-12">-->
+<!--            &lt;!&ndash; End FAQ full &ndash;&gt;-->
+<!--            <div class="faq-full">-->
+<!--              <div class="single-faq ">-->
+<!--                <h4>Cryptocurrency</h4>-->
+<!--              </div>-->
+<!--              <div class="accordion-container-two">-->
+<!--                <div class="ac" id="gameflip-first">-->
+<!--                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 1: Choose an amount</h2>-->
+<!--                  <div class="ac-a accordion__content">-->
+<!--                    <p class="accordion__content-desc">-->
+<!--                      Go to <a href="http://myredeem.club/en/" target="_blank">http://myredeem.club/en/</a> and choose the amount in dollars you would like to donate-->
+<!--                      <br>-->
+<!--                      <img src="/img/aafree/donate/crypto/1.png">-->
+<!--                      You can see dollar to gem exchange rate <a href="/donate">here</a>-->
+<!--                    </p>-->
+<!--                  </div>-->
+<!--                </div>-->
 
-                <div class="ac accordion__content">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 2: Confirm your email</h2>
-                  <div class="ac-a">
-                    <p class="accordion__content-desc">
-                      You must give a valid email. After your purchase, a code you can redeem for in game gems will be sent to this email, so make sure it is correct.
-                      <br>
-                      <img src="/img/aafree/donate/crypto/2.png">
-                      When you press “Confirm email” a message will be sent to the email you entered. Be sure to check your spam box.
-                      <br><br>
-                      <span style="color: #fa4343"><b>Valid Emails:</b> yandex.ru, ukr.net, rambler.ru, yahoo.com, gmail.com, hotmail.com, outlook.com, live.com, aol.com, gmx.com, icloud.com, qq.com</span>
+<!--                <div class="ac accordion__content">-->
+<!--                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 2: Confirm your email</h2>-->
+<!--                  <div class="ac-a">-->
+<!--                    <p class="accordion__content-desc">-->
+<!--                      You must give a valid email. After your purchase, a code you can redeem for in game gems will be sent to this email, so make sure it is correct.-->
+<!--                      <br>-->
+<!--                      <img src="/img/aafree/donate/crypto/2.png">-->
+<!--                      When you press “Confirm email” a message will be sent to the email you entered. Be sure to check your spam box.-->
+<!--                      <br><br>-->
+<!--                      <span style="color: #fa4343"><b>Valid Emails:</b> yandex.ru, ukr.net, rambler.ru, yahoo.com, gmail.com, hotmail.com, outlook.com, live.com, aol.com, gmx.com, icloud.com, qq.com</span>-->
 
-                    </p>
-                  </div>
-                </div>
+<!--                    </p>-->
+<!--                  </div>-->
+<!--                </div>-->
 
-                <div class="ac">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 3: Choose FreeKassa as your payment platform</h2>
-                  <div class="ac-a accordion__content">
-                    <p class="accordion__content-desc">
-                      Click on “Select a payment system” then choose “FreeKassa” from the options listed
-                      <img src="/img/aafree/donate/crypto/3-a.png">
-                      <img src="/img/aafree/donate/crypto/3-b.png">
-                    </p>
-                  </div>
-                </div>
-                <div class="ac">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 4: Redirect to FreeKassa</h2>
-                  <div class="ac-a accordion__content">
-                    <p class="accordion__content-desc">
-                      <b>You will now need to click “Go to the payment” twice.</b>
-                      <br><br>
-                      The first time you click, you will be given an order number.<br>
-                      The second time you click you will be redirected to FreeKassa to make your payment. The redirect will open a separate window, DO NOT CLOSE the original window with your order number until you have successfully received your gems in game.
-                      <img src="/img/aafree/donate/crypto/4-a.png">
-                      <img src="/img/aafree/donate/crypto/4-b.png">
-                    </p>
-                  </div>
-                </div>
-                <div class="ac">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 5: Choose your preferred language</h2>
-                  <div class="ac-a accordion__content">
-                    <p class="accordion__content-desc">
-                      In the upper right corner of the new page you will see a button that says “Select Language”. Click it and select your preferred language from the drop down
-                      <img src="/img/aafree/donate/crypto/5-a.png">
-                      <img src="/img/aafree/donate/crypto/5-b.png">
-                    </p>
-                  </div>
-                </div>
-                <div class="ac">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 6: Choose your preferred payment method</h2>
-                  <div class="ac-a accordion__content">
-                    <p class="accordion__content-desc">
-                      <b>Click on the payment method you prefer to use.</b>
-                      <br><br>
-                      As an English speaker you most likely don’t own a debit or credit card that has Russian rubles. So really your only option is to choose one of the crypto currency methods.
-                      <img src="/img/aafree/donate/crypto/6.png">
+<!--                <div class="ac">-->
+<!--                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 3: Choose FreeKassa as your payment platform</h2>-->
+<!--                  <div class="ac-a accordion__content">-->
+<!--                    <p class="accordion__content-desc">-->
+<!--                      Click on “Select a payment system” then choose “FreeKassa” from the options listed-->
+<!--                      <img src="/img/aafree/donate/crypto/3-a.png">-->
+<!--                      <img src="/img/aafree/donate/crypto/3-b.png">-->
+<!--                    </p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="ac">-->
+<!--                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 4: Redirect to FreeKassa</h2>-->
+<!--                  <div class="ac-a accordion__content">-->
+<!--                    <p class="accordion__content-desc">-->
+<!--                      <b>You will now need to click “Go to the payment” twice.</b>-->
+<!--                      <br><br>-->
+<!--                      The first time you click, you will be given an order number.<br>-->
+<!--                      The second time you click you will be redirected to FreeKassa to make your payment. The redirect will open a separate window, DO NOT CLOSE the original window with your order number until you have successfully received your gems in game.-->
+<!--                      <img src="/img/aafree/donate/crypto/4-a.png">-->
+<!--                      <img src="/img/aafree/donate/crypto/4-b.png">-->
+<!--                    </p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="ac">-->
+<!--                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 5: Choose your preferred language</h2>-->
+<!--                  <div class="ac-a accordion__content">-->
+<!--                    <p class="accordion__content-desc">-->
+<!--                      In the upper right corner of the new page you will see a button that says “Select Language”. Click it and select your preferred language from the drop down-->
+<!--                      <img src="/img/aafree/donate/crypto/5-a.png">-->
+<!--                      <img src="/img/aafree/donate/crypto/5-b.png">-->
+<!--                    </p>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="ac">-->
+<!--                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 6: Choose your preferred payment method</h2>-->
+<!--                  <div class="ac-a accordion__content">-->
+<!--                    <p class="accordion__content-desc">-->
+<!--                      <b>Click on the payment method you prefer to use.</b>-->
+<!--                      <br><br>-->
+<!--                      As an English speaker you most likely don’t own a debit or credit card that has Russian rubles. So really your only option is to choose one of the crypto currency methods.-->
+<!--                      <img src="/img/aafree/donate/crypto/6.png">-->
 
-                      If you prefer to pay with debit or credit, check out the <a v-on:click="toGameFlip" style="cursor: pointer">Gameflip payment method</a>.
 
-                    </p>
-                  </div>
-                </div>
+<!--                    </p>-->
+<!--                  </div>-->
+<!--                </div>-->
 
-                <div class="ac">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 7: Retype email and complete purchase</h2>
-                  <div class="ac-a accordion__content">
-                    <p class="accordion__content-desc">
-                      Retype the same email that you confirmed before, then press “Go to the payment”
-                      <img src="/img/aafree/donate/crypto/7.png">
-                      After that FreeKassa will give you payment instructions custom made for the payment method you choose.
-                      <br><br>
-                      Follow the instructions and wait to receive a payment receipt and digital code in your email. They should come in 2 separate emails and it may take up to 15 minutes, so stay calm if you dont get them right away. Remember to check your spam folder!
-                    </p>
-                  </div>
-                </div>
+<!--                <div class="ac">-->
+<!--                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 7: Retype email and complete purchase</h2>-->
+<!--                  <div class="ac-a accordion__content">-->
+<!--                    <p class="accordion__content-desc">-->
+<!--                      Retype the same email that you confirmed before, then press “Go to the payment”-->
+<!--                      <img src="/img/aafree/donate/crypto/7.png">-->
+<!--                      After that FreeKassa will give you payment instructions custom made for the payment method you choose.-->
+<!--                      <br><br>-->
+<!--                      Follow the instructions and wait to receive a payment receipt and digital code in your email. They should come in 2 separate emails and it may take up to 15 minutes, so stay calm if you dont get them right away. Remember to check your spam folder!-->
+<!--                    </p>-->
+<!--                  </div>-->
+<!--                </div>-->
 
-                <div class="ac">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 8: Login to your account</h2>
-                  <div class="ac-a accordion__content">
-                    <p class="accordion__content-desc">
-                      Login to the official, international website at: <a href="https://aafree.to/user/auth/" target="_blank">https://aafree.to/user/auth/</a>
-                    </p>
-                  </div>
-                </div>
+<!--                <div class="ac">-->
+<!--                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 8: Login to your account</h2>-->
+<!--                  <div class="ac-a accordion__content">-->
+<!--                    <p class="accordion__content-desc">-->
+<!--                      Login to the official, international website at: <a href="https://aafree.to/user/auth/" target="_blank">https://aafree.to/user/auth/</a>-->
+<!--                    </p>-->
+<!--                  </div>-->
+<!--                </div>-->
 
-                <div class="ac">
-                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 9: Activate your digital code</h2>
-                  <div class="ac-a accordion__content">
-                    <p class="accordion__content-desc">
-                      Copy and paste your digital code into the “Pin” text box and press “Activate”. Login to the game and wait for your gem to be delivered. This can take up to 10 minutes.
-                      <img src="/img/aafree/donate/crypto/9.png" />
-                      If you run into issues, log back into the international website and press "Create ticket"
-                    </p>
-                  </div>
-                </div>
+<!--                <div class="ac">-->
+<!--                  <h2 class="ac-q accordion__title-text" tabIndex="0">Step 9: Activate your digital code</h2>-->
+<!--                  <div class="ac-a accordion__content">-->
+<!--                    <p class="accordion__content-desc">-->
+<!--                      Copy and paste your digital code into the “Pin” text box and press “Activate”. Login to the game and wait for your gem to be delivered. This can take up to 10 minutes.-->
+<!--                      <img src="/img/aafree/donate/crypto/9.png" />-->
+<!--                      If you run into issues, log back into the international website and press "Create ticket"-->
+<!--                    </p>-->
+<!--                  </div>-->
+<!--                </div>-->
 
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="business-faq">
-              <h3>Cryptocurrency</h3>
-              <p>Donate via the free-kassa payment platform using common, main stream Crytocurrency. Obtaining Crypto in the first place is beyond the scope of this tutorial.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="col-md-4 col-sm-4 col-xs-12">-->
+<!--            <div class="business-faq">-->
+<!--              <h3>Cryptocurrency</h3>-->
+<!--              <p>Donate via the free-kassa payment platform using common, main stream Crytocurrency. Obtaining Crypto in the first place is beyond the scope of this tutorial.</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
     </div>
   </div>
@@ -287,7 +286,7 @@
         name: "DonateHelp",
       mounted() {
         new Accordion('.accordion-container-one');
-        new Accordion('.accordion-container-two');
+        // new Accordion('.accordion-container-two');
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         if (urlParams.has('needsHelp'))

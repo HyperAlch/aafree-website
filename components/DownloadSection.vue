@@ -7,17 +7,9 @@
           <div class="alert alert-danger" role="alert">
             <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
             <span class="sr-only"></span>
-            <h3 class="alert-danger">Important</h3> Copyright holders of ArcheAge (XL Games) have sent requests to "black list" the servers AAFree uses to deliver their downloads. This means many <b>Anti Virus</b>
-            software will falsely block some URL's when you try to download the game. We DO NOT request that you turn off your <b>Anti Virus</b> because it is unsafe, but we
-            do request that you add exclusions to these 3 URLs in order for your download to go smoothly:<br><br>
-            <ul>
-              <li>http://cdn01.aafree.xyz/</li>
-              <li>http://cdn02.aafree.xyz/</li>
-              <li>http://sgcdn.aafree.xyz/</li>
-            </ul>
-            <br>
-            If you are unsure on how to add exclusions to your <b>Anti Virus</b>, please visit our <a href="https://discord.com/invite/6uBDQu7">Discord</a><br>
-            Also, keep in mind that in most cases URL exclusions do not exempt the files them self's from being scanned. So you are still protected.
+            <h3 class="alert-danger">Important</h3>
+            AAFree’s download servers and some of its game files have been falsely flagged as malware (our best guess is by XLGames and / or Gamigo, but we don’t know for sure). We are currently in the process of contacting each Anti Virus company to try and undo the damage.
+            If you are having any trouble with false positives by your Anti Virus, please go to our <a href="https://discord.com/invite/6uBDQu7">Discord</a> for help.
           </div>
         </div>
       </div>

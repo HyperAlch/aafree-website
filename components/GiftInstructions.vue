@@ -62,7 +62,7 @@
                   <h2 class="ac-q accordion__title-text" tabIndex="0">Step 5: Login and go to Cart Items</h2>
                   <div class="ac-a accordion__content">
                     <p class="accordion__content-desc">
-                      Go here and login: <a href="https://aafree.to/user/auth/" target="_blank">https://aafree.to/user/auth/</a><br>
+                      Go here and login: <a href="https://aafree.to/user/" target="_blank">https://aafree.to/user/</a><br>
                       Then click on “Cart Items”
                       <img src="/img/aafree/gift/5.png">
                     </p>

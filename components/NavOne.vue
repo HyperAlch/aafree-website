@@ -17,7 +17,7 @@
               <ul class="hidden-xs">
                 <li><a href="#"><img src="/img/icon/login.png" alt="">&nbsp;Login &nbsp;/&nbsp; Signup</a>
                   <ul>
-                    <li v-on:click="toGoOfficial('/user/auth/')"><a href="#">Login</a></li><br>
+                    <li v-on:click="toGoOfficial('/user/')"><a href="#">Login</a></li><br>
                     <li v-on:click="toGoOfficial('/reg/')"><a href="#">Signup</a></li>
                   </ul>
                 </li>
@@ -100,7 +100,7 @@
                   <li onclick="window.location = 'https://discord.com/invite/6uBDQu7'"><a class="pagess" href="#">Discord</a></li>
                   <li v-on:click="toGoOfficial('/forums/index.php')"><a class="pagess" href="#">Forum</a></li>
                   <br>
-                  <li v-on:click="toGoOfficial('/user/auth/')"><a class="pagess pink" href="#">Login</a></li>
+                  <li v-on:click="toGoOfficial('/user/')"><a class="pagess pink" href="#">Login</a></li>
                   <li v-on:click="toGoOfficial('/reg/')"><a class="pagess pink" href="#">Signup</a></li>
                   <br>
                 </ul>
