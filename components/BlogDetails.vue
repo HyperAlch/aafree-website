@@ -8,35 +8,24 @@
             <article class="blog-post-wrapper">
               <div class="blog-banner">
                 <a href="#" class="blog-images">
-                  <img src="/img/blog/b1.jpg" alt="">
+                  <img :src="feature_image" alt="">
                 </a>
                 <div class="blog-content">
                   <div class="blog-meta">
                                             <span class="admin-type">
                                                 <i class="fa fa-user"></i>
-                                                Admin
+                                                {{ author }}
                                             </span>
                     <span class="date-type">
                                                <i class="fa fa-calendar"></i>
-                                                24 april, 2019
+                                                {{ published_at }}
                                             </span>
-                    <span class="comments-type">
-                                                <i class="fa fa-comment-o"></i>
-                                                07
-                                            </span>
+
                   </div>
-                  <h4>The universal acceptance has given a tremendous</h4>
-                  <p>The universal acceptance of Consultation has given a tremendous opportunity for merchants to do crossborder transactions instantly and at reduced cost.Consultations are slowly gaining immense recognition and are growing phenomenally with more and more people trading with this digital currency.</p>
-                  <blockquote>
-                    <p>Consultations are slowly gaining immense recognition and are growing phenomenally with more and more people trading with this digital currency. The universal acceptance of Consultation.</p>
-                  </blockquote>
-                  <p>The universal acceptance of Consultation has given a tremendous opportunity for merchants to do crossborder transactions instantly and at reduced cost.Consultations are slowly gaining immense recognition and are growing phenomenally with more..</p>
-                  <h5>With more and more people trading with this digital </h5>
-                  <p>The universal acceptance of Consultation has given a tremendous opportunity for merchants to do crossborder transactions instantly and at reduced cost.Consultations are slowly gaining immense recognition and are growing phenomenally with more..</p>
-                  <div class="img-blog">
-                    <img src="/img/blog/b3.jpg" alt="">
+                  <h4 id="guide-title">{{ title }}</h4>
+                  <div v-html="html">
+
                   </div>
-                  <p>The universal acceptance of Consultation has given a tremendous opportunity for merchants to do crossborder transactions instantly and at reduced cost.Consultations are slowly gaining immense recognition and are growing phenomenally with more..</p>
                 </div>
               </div>
             </article>
@@ -79,7 +68,7 @@
               </div>
             </div>
             <div class="clear"></div>
-            <div class="single-post-comments">
+            <div v-if="0" class="single-post-comments">
               <div class="comments-area">
                 <div class="comments-heading">
                   <h3>4 comments</h3>
@@ -153,7 +142,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="comment-respond">
+              <div v-if="0" class="comment-respond">
                 <h3 class="comment-reply-title">Leave a Reply </h3>
                 <span class="email-notes">Your email address will not be published. Required fields are marked *</span>
                 <form action="#">
@@ -306,14 +295,74 @@
       <!-- End row -->
     </div>
   </div>
+
 </template>
 
 <script>
     export default {
-        name: "BlogDetails"
+      name: "BlogDetails",
+      data() {
+        return {
+          title: "",
+          author: "",
+          published_at: "",
+          feature_image: "",
+          html: "",
+          postObj: null
+        }
+      },
+      mounted() {
+        const api = new GhostContentAPI({
+          url: 'https://aafree.blog',
+          key: '8d891b351517f8bf05d8598abd',
+          version: "v3"
+        });
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+
+        if (urlParams.has("s"))
+        {
+          if (urlParams.get("s").trim() != "")
+          {
+            let slug = urlParams.get("s").trim()
+            let posts = api.posts
+              .read({slug: slug, include: 'tags,authors,slug'})
+              .then((post) => {
+                // this.postObj = post
+                this.title = post.title
+                this.author = post.authors[0].name
+
+                let date = post.published_at.replace("T", "-").split("-")
+                this.published_at = date[1]+"-"+date[2]+"-"+date[0]
+
+                this.feature_image = post.feature_image
+                this.html = post.html
+              })
+            .catch((err) => {
+              window.location.href = "/guides";
+            });
+          }
+        }
+
+      }
     }
 </script>
 
-<style scoped>
+<style>
+  figcaption {
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
 
+  img {
+    margin-bottom: 15px;
+  }
+
+  #guide-title {
+    margin-bottom: 35px;
+  }
 </style>

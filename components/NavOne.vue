@@ -63,8 +63,9 @@
                     <li v-on:click="toGoOfficial('/news/')"><nuxt-link class="pagess" to="#">News</nuxt-link></li>
                     <li><nuxt-link class="pagess" to="/download">Game Download</nuxt-link></li>
                     <li><nuxt-link class="pagess" to="/donate">Donate</nuxt-link></li>
+                    <li><nuxt-link class="pagess" to="/guides">Guides</nuxt-link></li>
                     <li onclick="window.location = 'https://discord.com/invite/6uBDQu7'"><nuxt-link class="pagess" to="#">Discord</nuxt-link></li>
-                    <li v-on:click="toGoOfficial('/forums/index.php')"><nuxt-link class="pagess" to="#">Forum</nuxt-link></li>
+
                   </ul>
                 </div>
               </div>
@@ -97,8 +98,9 @@
                   <li v-on:click="toGoOfficial('/news/')"><a class="pagess" href="#">News</a></li>
                   <li><a class="pagess" href="/download">Game Download</a></li>
                   <li><a class="pagess" href="/donate">Donate</a></li>
+                  <li><a class="pagess" href="/guides">Guides</a></li>
                   <li onclick="window.location = 'https://discord.com/invite/6uBDQu7'"><a class="pagess" href="#">Discord</a></li>
-                  <li v-on:click="toGoOfficial('/forums/index.php')"><a class="pagess" href="#">Forum</a></li>
+
                   <br>
                   <li v-on:click="toGoOfficial('/user/')"><a class="pagess pink" href="#">Login</a></li>
                   <li v-on:click="toGoOfficial('/reg/')"><a class="pagess pink" href="#">Signup</a></li>

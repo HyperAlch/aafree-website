@@ -54,7 +54,7 @@
     <div class="col-md-2 col-sm-4 col-xs-12">
       <div class="footer-content last-content">
         <div class="footer-head">
-          <h4>Support</h4>
+          <h4>Tech</h4>
           <ul class="footer-list">
             <li><a href="#">Guide Coming</a></li>
             <li><a href="#">Guide Coming</a></li>

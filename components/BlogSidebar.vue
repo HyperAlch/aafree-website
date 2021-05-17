@@ -1,147 +1,26 @@
 <template>
   <div class="blog-area fix bg-color-2 area-padding">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="section-headline text-center">
-            <h3>Games world news</h3>
-            <p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts</p>
-          </div>
-        </div>
-      </div>
+
       <div class="row">
         <div class="blog-sidebar-right">
           <div class="col-md-8 col-sm-8 col-xs-12">
             <div class="row">
               <div class="blog-left-content">
                 <!-- Start single blog -->
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="single-blog ">
-                    <div class="blog-image">
-                      <a class="image-scale" href="#">
-                        <img src="/img/blog/b1.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                                                    <span class="admin-type">
-                                                        <i class="fa fa-user"></i>
-                                                        Admin
-                                                    </span>
-                        <span class="date-type">
-                                                        <i class="fa fa-calendar"></i>
-                                                        20 july, 2019
-                                                    </span>
-                        <span class="comments-type">
-                                                        <i class="fa fa-comment-o"></i>
-                                                        13
-                                                    </span>
-                      </div>
-                      <a href="#">
-                        <h4>You can trust me and playing with best win</h4>
-                      </a>
-                      <p>Lorem ipsum, or lipsum as it is some known, is dummy text used in laying out print, graphic or web designs.</p>
-                      <a class="blog-btn" href="#"> Read more</a>
-                    </div>
-                  </div>
-                </div>
+                <span v-for="post in postArray">
+                  <BlogListing
+                    :title="post.title"
+                    :slug="post.slug"
+                    :excerpt="post.excerpt"
+                    :image_url="post.feature_image"
+                    :published_at="post.published_at"
+                    :author="post.authors"
+                  />
+                </span>
+
                 <!-- End single blog -->
-                <!-- Start single blog -->
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="single-blog ">
-                    <div class="blog-image">
-                      <a class="image-scale" href="#">
-                        <img src="/img/blog/b2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                                                   <span class="admin-type">
-                                                        <i class="fa fa-user"></i>
-                                                        Admin
-                                                    </span>
-                        <span class="date-type">
-                                                       <i class="fa fa-calendar"></i>
-                                                        13 may, 2018
-                                                    </span>
-                        <span class="comments-type">
-                                                        <i class="fa fa-comment-o"></i>
-                                                        16
-                                                    </span>
-                      </div>
-                      <a href="#">
-                        <h4>Games playerwant to be benifit pateform games.</h4>
-                      </a>
-                      <p>Lorem ipsum, or lipsum as it is some known, is dummy text used in laying out print, graphic or web designs.</p>
-                      <a class="blog-btn" href="#"> Read more</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End single blog -->
-                <!-- Start single blog -->
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="single-blog ">
-                    <div class="blog-image">
-                      <a class="image-scale" href="#">
-                        <img src="/img/blog/b3.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                                                    <span class="admin-type">
-                                                        <i class="fa fa-user"></i>
-                                                        Admin
-                                                    </span>
-                        <span class="date-type">
-                                                       <i class="fa fa-calendar"></i>
-                                                        24 april, 2019
-                                                    </span>
-                        <span class="comments-type">
-                                                        <i class="fa fa-comment-o"></i>
-                                                        07
-                                                    </span>
-                      </div>
-                      <a href="#">
-                        <h4>Games player man want to be win any game</h4>
-                      </a>
-                      <p>Lorem ipsum, or lipsum as it is some known, is dummy text used in laying out print, graphic or web designs.</p>
-                      <a class="blog-btn" href="#"> Read more</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End single blog -->
-                <!-- Start single blog -->
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="single-blog ">
-                    <div class="blog-image">
-                      <a class="image-scale" href="#">
-                        <img src="/img/blog/b4.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="blog-content">
-                      <div class="blog-meta">
-                                                    <span class="admin-type">
-                                                        <i class="fa fa-user"></i>
-                                                        Admin
-                                                    </span>
-                        <span class="date-type">
-                                                       <i class="fa fa-calendar"></i>
-                                                        24 april, 2019
-                                                    </span>
-                        <span class="comments-type">
-                                                        <i class="fa fa-comment-o"></i>
-                                                        07
-                                                    </span>
-                      </div>
-                      <a href="#">
-                        <h4>Games developer must complete thier</h4>
-                      </a>
-                      <p>Lorem ipsum, or lipsum as it is some known, is dummy text used in laying out print, graphic or web designs.</p>
-                      <a class="blog-btn" href="#"> Read more</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- End single blog -->
+
                 <div class="col-md-12 col-sm-12 col-xs-12">
                   <div class="blog-pagination">
                     <ul class="pagination">
@@ -175,20 +54,18 @@
                 <div class="left-blog blog-category">
                   <h4>categories</h4>
                   <ul>
-                    <li><span>12</span><a href="#">Business</a></li>
-                    <li><span>17</span><a href="#">Agency </a></li>
-                    <li><span>07</span><a href="#">Media</a></li>
-                    <li><span>18</span><a href="#">Social</a></li>
-                    <li><span>14</span><a href="#">Photoshop</a></li>
-                    <li><span>10</span><a href="#">development</a></li>
-                    <li><span>15</span><a href="#">Design</a></li>
+                    <li><span>12</span><a href="#">Crafting</a></li>
+                    <li><span>17</span><a href="#">Gathering</a></li>
+                    <li><span>07</span><a href="#">Combat</a></li>
+                    <li><span>18</span><a href="#">Technical</a></li>
+                    <li><span>14</span><a href="#">Other</a></li>
                   </ul>
                 </div>
               </div>
               <div class="left-blog-page">
                 <!-- recent start -->
                 <div class="left-blog">
-                  <h4>recent post</h4>
+                  <h4>recommended posts</h4>
                   <div class="recent-post">
                     <!-- start single post -->
                     <div class="recent-single-post">
@@ -255,7 +132,7 @@
                 </div>
                 <!-- recent end -->
               </div>
-              <div class="left-blog-page">
+              <div v-if="0" class="left-blog-page">
                 <div class="left-tags blog-tags">
                   <div class="popular-tag left-side-tags left-blog">
                     <h4>popular tags</h4>
@@ -284,8 +161,37 @@
 </template>
 
 <script>
+    import BlogListing from "./BlogListing";
     export default {
-        name: "BlogSidebar"
+        name: "BlogSidebar",
+        components: {BlogListing},
+        data() {
+          return {
+            postArray: []
+          }
+        },
+        mounted() {
+          const api = new GhostContentAPI({
+            url: 'https://aafree.blog',
+            key: '8d891b351517f8bf05d8598abd',
+            version: "v3"
+          });
+
+          // To Do: Make pagination work
+
+          api.posts
+            .browse({limit: 5, page: 1,include: 'tags,authors,slug,excerpt'})
+            .then((posts) => {
+              posts.forEach((post) => {
+                this.postArray.push(post);
+              });
+            })
+            .catch((err) => {
+              console.error(err);
+            });
+
+
+        }
     }
 </script>
 

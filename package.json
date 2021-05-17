@@ -11,6 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "npm": "^7.11.2",
     "nuxt": "^2.0.0",
     "sweetalert2": "^10.15.5",
     "swiper": "5.x",

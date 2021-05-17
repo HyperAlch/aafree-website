@@ -96,6 +96,15 @@
                 </div>
 
                 <div class="ac">
+                  <h2 class="ac-q accordion__title-text" tabIndex="0">Where is the server located?</h2>
+                  <div class="ac-a accordion__content">
+                    <p class="accordion__content-desc">
+                      The server is located in <b>Germany</b>. If you have issues with ping try Exit Lag: <a href="https://www.exitlag.com/">https://www.exitlag.com/</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="ac">
                   <h2 class="ac-q accordion__title-text" tabIndex="0">Will you drop the server in a month or give up on the project?</h2>
                   <div class="ac-a accordion__content">
                     <p class="accordion__content-desc">
