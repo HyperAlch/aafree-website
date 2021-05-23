@@ -30,43 +30,7 @@
               </div>
             </article>
             <div class="clear"></div>
-            <div class="related-post">
-              <div class="comments-heading">
-                <h3>Related post</h3>
-              </div>
-              <div class="related-post-list">
-                <!-- start single post -->
-                <div class="recent-single-post">
-                  <div class="post-img">
-                    <a href="#">
-                      <img src="/img/blog/b1.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="pst-content">
-                    <p><a href="#">Online games zone always think positive economy.</a></p>
-                    <span class="date-type">
-                                                27 Jan / 2018
-                                            </span>
-                  </div>
-                </div>
-                <!-- End single post -->
-                <!-- start single post -->
-                <div class="recent-single-post">
-                  <div class="post-img">
-                    <a href="#">
-                      <img src="/img/blog/b2.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="pst-content">
-                    <p><a href="#">We offer games online services for gaimming.</a></p>
-                    <span class="date-type">
-                                                20 June / 2018
-                                            </span>
-                  </div>
-                </div>
-                <!-- End single post -->
-              </div>
-            </div>
+
             <div class="clear"></div>
             <div v-if="0" class="single-post-comments">
               <div class="comments-area">
@@ -171,124 +135,10 @@
             <!-- single-blog end -->
           </div>
           <!-- Start Right Sidebar blog -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="left-head-blog right-side">
-              <div class="left-blog-page">
-                <!-- search option start -->
-                <form action="#">
-                  <div class="blog-search-option">
-                    <input type="text" placeholder="Search...">
-                    <button class="button" type="submit">
-                      <i class="fa fa-search"></i>
-                    </button>
-                  </div>
-                </form>
-                <!-- search option end -->
-              </div>
-              <div class="left-blog-page">
-                <div class="left-blog blog-category">
-                  <h4>categories</h4>
-                  <ul>
-                    <li><span>12</span><a href="#">Business</a></li>
-                    <li><span>17</span><a href="#">Agency </a></li>
-                    <li><span>07</span><a href="#">Media</a></li>
-                    <li><span>18</span><a href="#">Social</a></li>
-                    <li><span>14</span><a href="#">Photoshop</a></li>
-                    <li><span>10</span><a href="#">development</a></li>
-                    <li><span>15</span><a href="#">Design</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="left-blog-page">
-                <!-- recent start -->
-                <div class="left-blog">
-                  <h4>recent post</h4>
-                  <div class="recent-post">
-                    <!-- start single post -->
-                    <div class="recent-single-post">
-                      <div class="post-img">
-                        <a href="#">
-                          <img src="/img/blog/b1.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="pst-content">
-                        <p><a href="#">We offer games online services for gaimming.</a></p>
-                        <span class="date-type">
-														26 Jan / 2019
-													</span>
-                      </div>
-                    </div>
-                    <!-- End single post -->
-                    <!-- start single post -->
-                    <div class="recent-single-post">
-                      <div class="post-img">
-                        <a href="#">
-                          <img src="/img/blog/b2.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="pst-content">
-                        <p><a href="#">playdo is an live games and casino board.</a></p>
-                        <span class="date-type">
-														20 June / 2019
-													</span>
-                      </div>
-                    </div>
-                    <!-- End single post -->
-                    <!-- start single post -->
-                    <div class="recent-single-post">
-                      <div class="post-img">
-                        <a href="#">
-                          <img src="/img/blog/b3.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="pst-content">
-                        <p><a href="#">Online games zone always think positive economy.</a></p>
-                        <span class="date-type">
-														26 Feb / 2019
-													</span>
-                      </div>
-                    </div>
-                    <!-- End single post -->
-                    <!-- start single post -->
-                    <div class="recent-single-post">
-                      <div class="post-img">
-                        <a href="#">
-                          <img src="/img/blog/b4.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="pst-content">
-                        <p><a href="#">Lottery can change life any human life</a></p>
-                        <span class="date-type">
-														13 Nov / 2019
-													</span>
-
-                      </div>
-                    </div>
-                    <!-- End single post -->
-                  </div>
-                </div>
-                <!-- recent end -->
-              </div>
-              <div class="left-blog-page">
-                <div class="left-tags blog-tags">
-                  <div class="popular-tag left-side-tags left-blog">
-                    <h4>popular tags</h4>
-                    <ul>
-                      <li><a href="#">Business</a></li>
-                      <li><a href="#">Agency </a></li>
-                      <li><a href="#">Media</a></li>
-                      <li><a href="#">Social</a></li>
-                      <li><a href="#">Photoshop</a></li>
-                      <li><a href="#">Seo</a></li>
-                      <li><a href="#">development</a></li>
-                      <li><a href="#">Search</a></li>
-                      <li><a href="#">Design</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <GuideSideMenu
+            v-if="showFeaturedPosts"
+            :featured_posts="postFeaturedArray"
+          />
         </div>
         <!-- End Right Sidebar -->
       </div>
@@ -299,8 +149,10 @@
 </template>
 
 <script>
+    import GuideSideMenu from "./GuideSideMenu";
     export default {
       name: "BlogDetails",
+      components: {GuideSideMenu},
       data() {
         return {
           title: "",
@@ -308,43 +160,68 @@
           published_at: "",
           feature_image: "",
           html: "",
-          postObj: null
+          postObj: null,
+          postFeaturedArray: [],
+          showFeaturedPosts: false,
         }
       },
       mounted() {
-        const api = new GhostContentAPI({
-          url: 'https://aafree.blog',
-          key: '8d891b351517f8bf05d8598abd',
-          version: "v3"
-        });
+        try {
+          const api = new GhostContentAPI({
+            url: 'https://aafree.blog',
+            key: '8d891b351517f8bf05d8598abd',
+            version: "v3"
+          });
 
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
 
-        if (urlParams.has("s"))
-        {
-          if (urlParams.get("s").trim() != "")
+          if (urlParams.has("s"))
           {
-            let slug = urlParams.get("s").trim()
-            let posts = api.posts
-              .read({slug: slug, include: 'tags,authors,slug'})
-              .then((post) => {
-                // this.postObj = post
-                this.title = post.title
-                this.author = post.authors[0].name
+            if (urlParams.get("s").trim() != "")
+            {
+              let slug = urlParams.get("s").trim()
+              let posts = api.posts
+                .read({slug: slug, include: 'tags,authors,slug'})
+                .then((post) => {
+                  //this.postObj = post
+                  this.title = post.title
+                  this.author = post.authors[0].name
 
-                let date = post.published_at.replace("T", "-").split("-")
-                this.published_at = date[1]+"-"+date[2]+"-"+date[0]
+                  let date = post.published_at.replace("T", "-").split("-")
+                  this.published_at = date[1]+"-"+date[2]+"-"+date[0]
 
-                this.feature_image = post.feature_image
-                this.html = post.html
-              })
+                  this.feature_image = post.feature_image
+                  this.html = post.html
+                })
+                .catch((err) => {
+                  console.error(err);
+                  window.location.href = "/guides";
+                });
+            }
+          }
+
+          api.posts
+            .browse({filter: 'featured:true', limit: 4, include: 'tags,authors,slug,excerpt'})
+            .then((posts) => {
+              posts.forEach((post) => {
+                if (post.tags.length > 0)
+                {
+                  this.postFeaturedArray.push(post);
+                }
+                this.showFeaturedPosts = true;
+              });
+            })
             .catch((err) => {
-              window.location.href = "/guides";
+              console.error(err);
             });
+        } catch (e) {
+          if (e instanceof ReferenceError) {
+            console.warn("GhostContentAPI not found, reloading page...");
+            location.reload();
+            return;
           }
         }
-
       }
     }
 </script>
@@ -359,7 +236,11 @@
   }
 
   img {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+  }
+
+  .topbar-right img {
+    margin-bottom: 0px;
   }
 
   #guide-title {

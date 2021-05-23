@@ -24,12 +24,9 @@
         <div class="footer-head">
           <h4>Crafting</h4>
           <ul class="footer-list">
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
+            <li><a href="/guide?s=gold-trader-locations-guide">Gold Trader Location Guide</a></li>
+            <li><a href="/guide?s=synthesis-costume-and-undergarments-guide">Synthesis Costume Guide</a></li>
+
           </ul>
         </div>
       </div>
@@ -40,12 +37,8 @@
         <div class="footer-head">
           <h4>Combat</h4>
           <ul class="footer-list">
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
+            <li><a href="/guide?s=guide-for-selecting-your-gift-packs-starting-armor">Starter Pack Armor Guide</a></li>
+
           </ul>
         </div>
       </div>
@@ -56,12 +49,8 @@
         <div class="footer-head">
           <h4>Tech</h4>
           <ul class="footer-list">
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
-            <li><a href="#">Guide Coming</a></li>
+            <li><a href="/guide?s=how-to-lower-your-ping-and-stabilize-your-connection-with-exitlag">Exit Lag Guide</a></li>
+
           </ul>
         </div>
       </div>

@@ -1,10 +1,10 @@
 <template>
   <div>
+    <script src="/js-lib/content-api.min.js"></script>
     <NavOne />
     <PageHeader title="Guides List" />
     <BlogSidebar />
     <FooterTwo />
-    <script src="/js-lib/content-api.min.js"></script>
   </div>
 </template>
 
